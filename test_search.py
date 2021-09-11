@@ -7,3 +7,4 @@ def test_search(browser):
     main_page.open_link()
     main_page.search_field()
     main_page.paste_word_to_search_field()
+
