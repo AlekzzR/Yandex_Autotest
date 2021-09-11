@@ -1,5 +1,6 @@
 from pages.base_page import BasePage
 from pages.locators import MainPageLocate
+from selenium.webdriver.common.keys import Keys
 
 class MainPage(BasePage):
 
@@ -13,6 +14,9 @@ class MainPage(BasePage):
     def suggest(self):
         assert self.finding_element(*MainPageLocate.SUGGEST_TABLE), 'Таблица с подсказками не появляется'
 
+    def press_enter(self):
+        button = self.browser.find_element(*MainPageLocate.SEACH_FIELD)
+        button.send_keys(Keys.ENTER)
 
 
 

@@ -9,5 +9,6 @@ def test_search(browser):
     main_page.search_field()
     main_page.paste_word_to_search_field()
     main_page.suggest()
+    main_page.press_enter()
 
-    time.sleep(3)                   #временное решение для проверки автотеста
+    time.sleep(3)                   # временное решение для проверки автотеста
