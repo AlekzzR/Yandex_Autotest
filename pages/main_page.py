@@ -4,6 +4,13 @@ from pages.locators import MainPageLocate
 class MainPage(BasePage):
 
     def search_field(self):
-        assert self.finding_element(*MainPageLocate.SEACH_FIELD)
+        assert self.finding_element(*MainPageLocate.SEACH_FIELD), 'Поле поиска не найдено'
+
+    def paste_word_to_search_field(self):
+        field = self.browser.find_element(*MainPageLocate.SEACH_FIELD)
+        field.send_keys(MainPageLocate.WORD_TO_SEARCH)
+
+
+
 
 

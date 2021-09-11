@@ -7,3 +7,4 @@ def browser():
     driver.implicitly_wait(7)
     yield driver
     driver.quit()
+
