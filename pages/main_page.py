@@ -10,6 +10,9 @@ class MainPage(BasePage):
         field = self.browser.find_element(*MainPageLocate.SEACH_FIELD)
         field.send_keys(MainPageLocate.WORD_TO_SEARCH)
 
+    def suggest(self):
+        assert self.finding_element(*MainPageLocate.SUGGEST_TABLE), 'Таблица с подсказками не появляется'
+
 
 
 
