@@ -9,5 +9,5 @@ class MainPageLocate:
     WORD_TO_SEARCH = 'Тензор'
 
 class ResultSearchPage:
-    SEARCH_RESULT = (By.ID,'#search-result')
+    SEARCH_RESULT = (By.CSS_SELECTOR, '.organic__path .link b')
 
