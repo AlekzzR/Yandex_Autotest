@@ -50,6 +50,13 @@ class PicturePage(BasePage):
         button = self.browser.find_element(*PictureSearchPage.PREVIOUS_BUTTON)
         button.click()
 
+    def same_image(self, src_first_picture):
+        first_image_after_click = self.browser.find_element(*PictureSearchPage.PICTURE_LOCATOR)
+        first_image_after_click_src = str(first_image_after_click.get_attribute('src'))
+        assert src_first_picture == first_image_after_click_src, 'Это уже другое изображение'
+
+
+
 
 
 
