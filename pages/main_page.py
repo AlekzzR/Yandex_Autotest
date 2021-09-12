@@ -23,6 +23,13 @@ class MainPage(BasePage):
         link_picture = [serv.text for serv in services_bar]
         assert 'Картинки' in link_picture, 'Ссылка "Картинки" отсутствует на странице'
 
+    def open_picture_link(self):
+        picture_link = self.browser.find_element(*MainPageLocate.PICTIRE_LINK)
+        picture_link.click()
+
+
+
+
 
 
 
