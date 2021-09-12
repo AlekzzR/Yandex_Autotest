@@ -17,6 +17,12 @@ class PictureSearchPage:
     INPUT_FIELD = (By.CSS_SELECTOR, '.input__control')
     TEXT_AFTER_SEARCH = (By.CSS_SELECTOR, '.suggest2-item__text')
     SEARCH_FIELD = (By.CSS_SELECTOR, '.input__control')
+    FIRST_PICTURE = (By.CSS_SELECTOR, '.serp-item__link')
+    NEXT_BUTTON = (By.CSS_SELECTOR, ".CircleButton_type_next")
+    PREVIOUS_BUTTON = (By.CSS_SELECTOR, ".CircleButton_type_prev")
+    PICTURE_LOCATOR = (By.CSS_SELECTOR, ".MMImage-Origin")
+
+
 
 
 

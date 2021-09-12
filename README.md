@@ -25,5 +25,6 @@
 ------------------------------------------------------------------------------------------------------------------------------------------
 Автотесты реализованы с использованием Python 3.9.2, Selenium Webdriver, Pytest, Pytest_check, PageObject, браузер Google Chrome v.93.
 Для работы в браузере Google Chrome необходимо установить ChromeDriver. Файл для версии Google Chrome 93 и Windows находится в корне репозитория.
-Ссылка на ChromeDriver для других версий браузера и операционной системы: https://chromedriver.chromium.org/downloads
+Ссылка на ChromeDriver для других версий браузера и операционной системы: https://chromedriver.chromium.org/downloads.
+Для написания кода использовался PyCharm.
 
