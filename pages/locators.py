@@ -13,6 +13,11 @@ class ResultSearchPage:
 
 class PictureSearchPage:
     CATEGORY = (By.CSS_SELECTOR, ".PopularRequestList-Item_pos_0")
+    CATEGORY_NAME = (By.CSS_SELECTOR, '.PopularRequestList-SearchText')
+    INPUT_FIELD = (By.CSS_SELECTOR, '.input__control')
+    TEXT_AFTER_SEARCH = (By.CSS_SELECTOR, '.suggest2-item__text')
+    SEARCH_FIELD = (By.CSS_SELECTOR, '.input__control')
+
 
 
 
