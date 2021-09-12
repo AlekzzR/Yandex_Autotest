@@ -26,6 +26,8 @@ class MainPage(BasePage):
     def open_picture_link(self):
         picture_link = self.browser.find_element(*MainPageLocate.PICTIRE_LINK)
         picture_link.click()
+        self.browser.switch_to.window(self.browser.window_handles[1])
+
 
 
 

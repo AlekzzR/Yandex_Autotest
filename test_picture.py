@@ -9,5 +9,10 @@ def test_picture(browser):
     main_page.open_link()
     main_page.services()
     main_page.open_picture_link()
+    picture_page = PicturePage(browser, browser.current_url)
+    picture_page.verify_url()
+    picture_page.open_first_category()
+
+
 
 
