@@ -11,3 +11,7 @@ class MainPageLocate:
 class ResultSearchPage:
     SEARCH_RESULT = (By.CSS_SELECTOR, '.organic__path .link b')
 
+class PictureSearchPage:
+    CATEGORY = (By.CSS_SELECTOR, ".PopularRequestList-Item_pos_0")
+
+

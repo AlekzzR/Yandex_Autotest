@@ -18,6 +18,11 @@ class MainPage(BasePage):
         button = self.browser.find_element(*MainPageLocate.SEACH_FIELD)
         button.send_keys(Keys.ENTER)
 
+    def services(self):
+        services_bar = self.browser.find_elements(*MainPageLocate.SERVICES)
+        link_picture = [serv.text for serv in services_bar]
+        assert 'Картинки' in link_picture, 'Ссылка "Картинки" отсутствует на странице'
+
 
 
 
